@@ -23,7 +23,7 @@ client_socket.setblocking(False)
 
 # Prepare username and header and send them
 # We need to encode username to bytes, then count number of bytes and prepare header of fixed size, that we encode to bytes as well
-if my_username == "Shrey" and my_password == "dodo":
+if my_username == "Ankit" and my_password == "AV":
 	username = my_username.encode('utf-8')
 	username_header = f"{len(username):<{HEADER_LENGTH}}".encode('utf-8')
 	client_socket.send(username_header + username)
